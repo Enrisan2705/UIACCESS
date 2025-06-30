@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso API - UIAccess</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="logo-header">
+      <img src="/static/icons/uib.png" alt="UIB" class="logo-uib" />
+      <img src="/static/icons/Logo_recortado.png" alt="Logo UIAccess" class="logo-uiaccess" />
+    </header>
+
+    <h2>Introduce tu API Key de OpenAI</h2>
+    <input type="password" id="apiKeyInput" placeholder="Introduce tu API Key" />
+    <div class="api-button-wrapper">
+      <button id="guardarClave">Entrar</button>
+    </div>
+    <p id="errorMsg" style="color: red; display: none;">La clave no es válida.</p>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+
+</html>

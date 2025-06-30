@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UIAccess</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="logo-header">
+      <img src="/static/icons/uib.png" alt="UIB" class="logo-uib" />
+      <img src="/static/icons/Logo_recortado.png" alt="Logo UIAccess" class="logo-uiaccess" />
+    </header>
+
+    <div class="button-group">
+      <button id="analizar">
+        <img src="/static/icons/analizar.png" alt="Analizar accesibilidad" class="icon" />
+        Analizar Accesibilidad
+      </button>
+      <button id="leer">
+        <img src="/static/icons/leer.png" alt="Leer informe" class="icon" />
+        Leer Informe
+      </button>
+      <button id="parar">
+        <img src="/static/icons/parar.png" alt="Parar lectura" class="icon" />
+        Parar Lectura
+      </button>
+    </div>
+    <h2>Selecciona una imagen:</h2>
+    <div id="dropzone" class="dropzone">
+      <p>Arrastra una imagen aquí o haz clic para seleccionarla</p>
+      <input type="file" id="imagen" accept="image/*" hidden />
+      <img id="preview" alt="Vista previa" class="preview" style="display: none" />
+    </div>
+
+    <h2>Descripción de la interfaz</h2>
+    <div id="descripcion" class="panel-texto"></div>
+    <h2>Informe de accesibilidad</h2>
+      <pre id="informe"></pre>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+
+</html>
